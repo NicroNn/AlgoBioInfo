@@ -7,7 +7,7 @@ import itmo.karenin.core.TaskName;
 import itmo.karenin.core.TaskRegistry;
 
 public class Main {
-    private static final TaskName DEFAULT_TASK = TaskName.ALIGN_TWO_STRINGS_USING_AFFINE_GAP_PENALTIES;
+    private static final TaskName DEFAULT_TASK = TaskName.PATTERN_MATCHING_BURROWS_WHEELER_TRANSFORM;
     private static final RunMode DEFAULT_MODE = RunMode.ACTUAL;
     private static final int DEFAULT_SAMPLE_INDEX = 2;
 
