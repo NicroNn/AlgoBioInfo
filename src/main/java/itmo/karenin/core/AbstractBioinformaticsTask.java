@@ -25,7 +25,7 @@ public abstract class AbstractBioinformaticsTask {
             expectedOutput = normalizeOutput(expectedOutput);
         }
         boolean matchesExpected = expectedOutput != null
-                && normalizeForComparison(actualOutput).equals(normalizeForComparison(expectedOutput));
+                && normalizeForComparison(actualOutput, input).equals(normalizeForComparison(expectedOutput, input));
         return new RunResult(actualOutput, expectedOutput, matchesExpected);
     }
 
@@ -103,5 +103,9 @@ public abstract class AbstractBioinformaticsTask {
 
     protected String normalizeForComparison(String output) {
         return normalizeOutput(output);
+    }
+
+    protected String normalizeForComparison(String output, String input) {
+        return normalizeForComparison(output);
     }
 }

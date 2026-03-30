@@ -7,9 +7,9 @@ import itmo.karenin.core.TaskName;
 import itmo.karenin.core.TaskRegistry;
 
 public class Main {
-    private static final TaskName DEFAULT_TASK = TaskName.PATTERN_MATCHING_BURROWS_WHEELER_TRANSFORM;
+    private static final TaskName DEFAULT_TASK = TaskName.IMPLEMENT_NEIGHBOR_JOINING;
     private static final RunMode DEFAULT_MODE = RunMode.ACTUAL;
-    private static final int DEFAULT_SAMPLE_INDEX = 2;
+    private static final int DEFAULT_SAMPLE_INDEX = 1;
 
     public static void main(String[] args) {
         if (args.length == 0) {
